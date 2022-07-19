@@ -1,0 +1,59 @@
+{% extends 'info/base.html' %}
+    {% load static %}
+
+    {% block content %}
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Exam</th>
+          <th scope="col">Day</th>
+          <th scope="col">Room Number</th>
+          <th scope="col">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>SPM</td>
+          <td>20/6/22</td>
+          <td>CR 101</td>
+          <td>11:00 am</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Cloud Computing</td>
+          <td>21/6/22</td>
+          <td>CR 102</td>
+          <td>1:00 Pm</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Computer Network</td>
+          <td>22/6/22</td>
+          <td>CR 101</td>
+          <td>12:00 Pm</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>T & B Writing</td>
+          <td>23/6/22</td>
+          <td>CR 104</td>
+          <td>3:00 Pm</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Artificial Intelligence</td>
+          <td>24/6/22</td>
+          <td>CR 101</td>
+          <td>1:00 Pm</td>
+        </tr>
+      </tbody>
+    </table>
+                  <div class="card mb-3">
+           <img src="{% static 'info/images/map.png' %}" class="card-img-top" alt="">
+          </div>
+
+
+    {% endblock %}

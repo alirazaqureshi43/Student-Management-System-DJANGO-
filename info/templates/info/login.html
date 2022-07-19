@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Login</title>
+
+      {% load static %}
+      <script src="https://kit.fontawesome.com/a87d5447bf.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS-->
+    <link href="{% static '/info/bootstrap/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="{% static '/info/bootstrap/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template-->
+    <link href="{% static '/info/bootstrap/css/sb-admin.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body 
+  style="background: linear-gradient(#e66465, #9198e5);">
+
+    <div class="container">
+      <h1 style="color: white; text-align: center;" class="my-5">Welcome to <i class="fas fa-graduation-cap"></i> SMS</h1>
+      <p style="color: white; text-align: center;">Please Log In to proceed.!!</p>
+      <div class="card card-login mx-auto mt-5">
+        <div class="card-header " >Login</div>
+        <div class="card-body">
+            <form method="post">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <button style="width: 100%;" class="btn btn-success" type="submit">Login</button>
+            </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="{% static '/info/bootstrap/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static '/info/bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="{% static '/info/bootstrap/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  </body>
+
+</html>
